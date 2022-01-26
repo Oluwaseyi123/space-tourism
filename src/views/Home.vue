@@ -36,7 +36,7 @@ export default {
   background-image: url("../assets/images/mobile-home.png");
 }
 .hero{
-  top: 13em;
+  top: 10em;
 }
 .left-div {
   width: 100%;
