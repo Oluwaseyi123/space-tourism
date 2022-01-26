@@ -107,7 +107,7 @@ export default {
     }
   }
 }
-.destination {
+.destination { 
   background-image: url("../assets/images/mobile-destination.png");
 }
 .container {

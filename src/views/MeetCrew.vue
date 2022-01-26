@@ -1,6 +1,6 @@
 <template>
   <div class="meet bg">
-    <div class="meet-container sect">
+    <div class="meet-container sect"> 
       <h5><span>02</span> meet your crew</h5>
 
       <div class="flex-container">
