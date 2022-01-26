@@ -18,7 +18,7 @@
             <router-link to="/destination" @click="closeNav"
               ><span>01</span> destination</router-link
             >
-            <router-link to="/offerings" @click="closeNav"
+            <router-link to="/meet-crew" @click="closeNav"
               ><span>02</span> crew</router-link
             >
             <router-link to="/contact" @click="closeNav"
