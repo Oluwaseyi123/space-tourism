@@ -125,8 +125,8 @@ export default {
     width: 100%;
     padding: 0px 100px;
     display: flex;
-    //top: 21em;
-    bottom: 4em;
+    top: 18em;
+   // bottom: 4em;
     align-items: end;
     justify-content: space-between;
   }
