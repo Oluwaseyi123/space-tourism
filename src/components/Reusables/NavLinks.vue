@@ -112,7 +112,7 @@ ul {
   top: 0;
   padding-top: 6em;
   right: 0;
-  width: 40%;
+  width: 55%;
   max-width: 400px;
   height: 100vh;
   z-index: 1;

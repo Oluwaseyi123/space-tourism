@@ -34,6 +34,7 @@ export default {
 <style lang="scss" scoped>
 .home {
   background-image: url("../assets/images/mobile-home.png");
+  height: 120vh;
 }
 .hero{
   top: 10em;

@@ -108,6 +108,7 @@ export default {
   }
 }
 .destination { 
+  height: 130vh;
   background-image: url("../assets/images/mobile-destination.png");
 }
 .container {
