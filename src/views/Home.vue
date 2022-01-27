@@ -87,7 +87,12 @@ export default {
   align-items: center;
   margin: 0 auto;
   transition: all 0.5s ease;
-  &:hover:before {
+  &:hover:before{
+    transition: all 0.5s ease;
+    opacity: 0.1;
+   
+  }
+  &:before {
     content: "";
     position: absolute;
     transition: all 0.5s ease;
@@ -96,9 +101,9 @@ export default {
     background: var(--white-color);
     border-radius: 50%;
     mix-blend-mode: normal;
-    opacity: 0.1;
-    z-index: -1;
+     z-index: -1;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, 0);
   }
   a {
@@ -209,8 +214,8 @@ export default {
       font-size: 32px;
     }
     &:hover:before {
-      width: 270px;
-      height: 270px;
+      width: 290px;
+      height: 290px;
     }
   }
 }

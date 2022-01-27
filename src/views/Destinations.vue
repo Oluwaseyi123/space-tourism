@@ -10,22 +10,22 @@
               <ul>
                 <li>
                   <router-link
-                    to="/destination"
+                    to="/destination/moon"
                     @click="(component = 'moon'), changeImage()"
                     >moon</router-link
                   >
                   <router-link
-                    to="/destination"
+                    to="/destination/mars"
                     @click="(component = 'Mars'), changeImage()"
                     >mars</router-link
                   >
                   <router-link
-                    to="/destination"
+                    to="/destination/europa"
                     @click="(component = 'Europa'), changeImage()"
                     >europa</router-link
                   >
                   <router-link
-                    to="/destination"
+                    to="/destination/titan"
                     @click="(component = 'Titan'), changeImage()"
                     >titan</router-link
                   >
@@ -33,9 +33,9 @@
               </ul>
             </div>
           </div>
-          <keep-alive>
+          <router-view>
             <component :is="component"> </component>
-          </keep-alive>
+          </router-view>
         </div>
       </div>
     </div>
@@ -101,16 +101,16 @@ export default {
         letter-spacing: 2.7px;
         color: var(--purple-color);
         position: relative;
-        // &.router-link-exact-active:after {
-        //   content: "";
-        //   bottom: 0;
-        //   top: 1.7em;
-        //   position: absolute;
-        //   width: 100%;
-        //   height: 2px;
-        //   left: 0em;
-        //   background: var(--white-color);
-        // }
+        &.router-link-exact-active:after {
+          content: "";
+          bottom: 0;
+          top: 1.7em;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0em;
+          background: var(--white-color);
+        }
       }
     }
   }
@@ -182,7 +182,7 @@ hr {
   margin-top: 1.5em;
 }
 @media screen and (min-width: 729px) {
-  .container {
+  .container { 
     top: 10.2em;
     .p {
       width: 100%;
