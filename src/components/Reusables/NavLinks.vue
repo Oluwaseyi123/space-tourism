@@ -21,7 +21,7 @@
             <router-link to="/meet-crew" @click="closeNav"
               ><span>02</span> crew</router-link
             >
-            <router-link to="/contact" @click="closeNav"
+            <router-link to="/technology" @click="closeNav"
               ><span>03</span> technology</router-link
             >
           </li>
@@ -113,7 +113,7 @@ ul {
   padding-top: 6em;
   right: 0;
   width: 55%;
-  max-width: 400px;
+  max-width: 250px;
   height: 100vh;
   z-index: 1;
   font-family: var(--barlow-condensed-family);

@@ -3,22 +3,30 @@
     <div class="container sect">
       <h5 class="p"><span>01</span> pick your destination</h5>
       <div class="flex-container">
-        <img :src="src" alt="planet_image"  />
+        <img :src="src" alt="planet_image" />
         <div class="right-div">
           <div class="s">
             <div class="route-container">
               <ul>
                 <li>
-                  <router-link to="/destination" @click="(component = 'moon'), changeImage()"
+                  <router-link
+                    to="/destination"
+                    @click="(component = 'moon'), changeImage()"
                     >moon</router-link
                   >
-                  <router-link to="/destination" @click="(component = 'Mars'), changeImage()"
+                  <router-link
+                    to="/destination"
+                    @click="(component = 'Mars'), changeImage()"
                     >mars</router-link
                   >
-                  <router-link to="/destination" @click="(component = 'Europa'), changeImage()"
+                  <router-link
+                    to="/destination"
+                    @click="(component = 'Europa'), changeImage()"
                     >europa</router-link
                   >
-                  <router-link to="/destination" @click="(component = 'Titan'), changeImage()"
+                  <router-link
+                    to="/destination"
+                    @click="(component = 'Titan'), changeImage()"
                     >titan</router-link
                   >
                 </li>
@@ -35,10 +43,10 @@
 </template> 
 
 <script>
-import Moon from "../components/Moon.vue";
-import Europa from "../components/Europa.vue";
-import Mars from "../components/Mars.vue";
-import Titan from "../components/Titan.vue";
+import Moon from "../components/Planets/Moon.vue";
+import Europa from "../components/Planets/Europa.vue";
+import Mars from "../components/Planets/Mars.vue";
+import Titan from "../components/Planets/Titan.vue";
 
 export default {
   components: {
@@ -107,12 +115,13 @@ export default {
     }
   }
 }
-.destination { 
-  height: 130vh;
+.destination {
+  height: 105vh;
+  overflow-y: hidden;
   background-image: url("../assets/images/mobile-destination.png");
 }
 .container {
-  top: 5em;
+  top: 8em;
 }
 .flex-container {
   margin-top: 1.5em;
@@ -174,7 +183,7 @@ hr {
 }
 @media screen and (min-width: 729px) {
   .container {
-    top: 7.2em;
+    top: 10.2em;
     .p {
       width: 100%;
       //text-align: left;
@@ -192,6 +201,9 @@ hr {
   }
 }
 @media screen and (min-width: 1000px) {
+  .destination {
+    height: 100vh;
+  }
   .s {
     position: absolute;
     left: 0;

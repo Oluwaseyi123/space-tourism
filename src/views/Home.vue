@@ -13,7 +13,7 @@
       </div>
       <div class="right-div">
         <div class="ex-container">
-          <a href="#">explore</a>
+          <router-link to="/destination">explore</router-link>
         </div>
       </div>
     </div>
@@ -176,6 +176,10 @@ export default {
    .hero {
     padding: 0px 120px;
   }
+  .home {
+  
+  height: 100vh;
+}
 }
 @media screen and (min-width: 1280px){
    .left-div {

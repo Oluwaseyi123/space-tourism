@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import NavLinks from "./Reusables/NavLinks.vue";
+import NavLinks from "./NavLinks.vue";
 export default {
   components: {
     NavLinks,
