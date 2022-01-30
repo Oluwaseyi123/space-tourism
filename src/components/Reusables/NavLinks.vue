@@ -15,7 +15,7 @@
             <router-link to="/" @click="closeNav">
               <span>00</span> home</router-link
             >
-            <router-link to="/destination" @click="closeNav"
+            <router-link to="/destination/moon" @click="closeNav"
               ><span>01</span> destination</router-link
             >
             <router-link to="/meet-crew" @click="closeNav"

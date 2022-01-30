@@ -13,7 +13,7 @@
       </div>
       <div class="right-div">
         <div class="ex-container">
-          <router-link to="/destination">explore</router-link>
+          <router-link to="/destination/moon">explore</router-link>
         </div>
       </div>
     </div>
