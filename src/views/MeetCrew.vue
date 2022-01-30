@@ -12,19 +12,30 @@
         <div class="right-div">
           <div class="paginationn">
             <div
-              class="page one"
-              @click.self="(component = 'Douglas'),(isActive = 'btn1'), changeImage()" :class="{page, one, active: isActive === 'btn1' }" ></div>
+              @click.self="
+                (component = 'Douglas'), (isActive = 'btn1'), changeImage()
+              "
+              :class="{ page, one, active: isActive === 'btn1' }"
+            ></div>
             <div
-              class="page two rest"
-              @click.self="(component = 'Mark'),(isActive = 'btn2'), changeImage()" :class="{ active: isActive === 'btn2' }"
+              @click.self="
+                (component = 'Mark'), (isActive = 'btn2'), changeImage()
+              "
+              :class="{ active: isActive === 'btn2' }"
             ></div>
             <div
               class="page three rest"
-              @click.self="(component = 'Victor'), (isActive = 'btn3'), changeImage()" :class="{ active: isActive === 'btn3' }"
+              @click.self="
+                (component = 'Victor'), (isActive = 'btn3'), changeImage()
+              "
+              :class="{ active: isActive === 'btn3' }"
             ></div>
             <div
               class="page four rest"
-              @click.self="(component = 'Ansari'),(isActive = 'btn4'), changeImage()" :class="{ active: isActive === 'btn4' }"
+              @click.self="
+                (component = 'Ansari'), (isActive = 'btn4'), changeImage()
+              "
+              :class="{ active: isActive === 'btn4' }"
             ></div>
           </div>
           <component :is="component"> </component>
@@ -44,7 +55,7 @@ export default {
     return {
       component: "Douglas",
       src: "",
-      isActive: 'btn1'
+      isActive: "btn1",
     };
   },
   components: {
@@ -54,7 +65,7 @@ export default {
     Ansari,
   },
   mounted() {
-    this.changeImage()
+    this.changeImage();
   },
   methods: {
     changeImage() {
@@ -87,11 +98,10 @@ export default {
   margin-top: 2em;
   .img-container {
     position: relative;
-    
+
     img {
       width: 200px;
       height: 230px;
-
     }
     hr {
       width: 86vw;
@@ -110,50 +120,46 @@ export default {
   align-items: center;
   width: 90px;
   margin: 1em auto 0;
-  #page{
-     margin: 0 auto;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background: pink;
-    cursor: pointer;
-  }
-  .page {
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background: var(--white-color);
-    cursor: pointer;
-    &.one{
-       background: var(--white-color);
+  div {
+    &:nth-of-type(1) {
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+    background-color: var(--white-color);
+      cursor: pointer;
     }
-  }
-  .rest{
-   // mix-blend-mode: normal;
-    opacity: 0.17;
+    &:nth-of-type(2),&:nth-of-type(3), &:nth-of-type(4) {
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+     background: var(--white-color);
+      cursor: pointer;
+       opacity: 0.17;
+    }
   }
 }
 @media screen and (min-width: 729px) {
-  .meet-container{
+  .meet-container {
     top: 2em;
   }
-  .flex-container{
+  .flex-container {
     display: flex;
     margin-top: 1em;
     flex-direction: column-reverse;
-    hr{
+    hr {
       display: none;
     }
-    .img-container{
+    .img-container {
       margin-top: 2em;
-      img{
+      img {
         width: 300px;
         height: 350px;
       }
     }
   }
-  .right-div{
+  .right-div {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -163,47 +169,44 @@ export default {
     background-image: url("../assets/images/meet-crew.png");
   }
 }
-@media screen and (min-width: 1000px){
-.meet {
-  overflow-y: hidden;
-  height: 100vh;
- 
-}
+@media screen and (min-width: 1000px) {
+  .meet {
+    overflow-y: hidden;
+    height: 100vh;
+  }
 }
 @media screen and (min-width: 1120px) {
   .meet-container {
-  margin-top: 8em;
-}
-  .flex-container{
+    margin-top: 8em;
+  }
+  .flex-container {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    .img-container{
-      img{
+    .img-container {
+      img {
         width: 420px;
         height: 710px;
       }
     }
   }
-  .right-div{
+  .right-div {
     //margin-right: 5em;
-    p{
+    p {
       text-align: left;
     }
   }
-  .paginationn{
-    margin:  0;
+  .paginationn {
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1330px) {
-
-  .right-div{
+  .right-div {
     margin-right: 7em;
-  
   }
-  .paginationn{
-    margin:  7em 0 0;
+  .paginationn {
+    margin: 7em 0 0;
   }
 }
 </style>

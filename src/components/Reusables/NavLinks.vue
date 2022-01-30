@@ -10,7 +10,7 @@
       </div>
       <div class="line"></div>
       <nav>
-        <ul :class="{ show: isClicked}">
+        <ul :class="{ show: isClicked }">
           <li>
             <router-link to="/" @click="closeNav">
               <span>00</span> home</router-link
@@ -42,11 +42,10 @@ export default {
   methods: {
     animateNav() {
       this.isClicked = !this.isClicked;
-      
     },
     closeNav() {
-      this.isNav = false
-      console.log(this.isNav);
+      this.isNav = false;
+     
     },
   },
 };
@@ -135,7 +134,7 @@ ul {
       position: absolute;
       width: 3px;
       height: 25px;
-     
+
       background: var(--white-color);
     }
     span {

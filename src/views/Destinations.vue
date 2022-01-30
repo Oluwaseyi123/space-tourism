@@ -62,13 +62,11 @@ export default {
     };
   },
   mounted() {
-    console.log(this.component);
     const planets = this.$store.getters.getPlanets;
     planets.forEach((planet) => {
       if (planet.name.toLowerCase() == this.component.toLowerCase()) {
         this.src = planet.src;
       }
-      console.log(planet);
     });
   },
   methods: {

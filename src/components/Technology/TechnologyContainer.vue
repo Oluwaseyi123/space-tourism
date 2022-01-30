@@ -48,7 +48,16 @@ export default {
   .technology-info{
     .gen, .tech-info,.terminology{
       text-align: left;
-       width: 350px;
+       width: 390px;
+    }
+    .terminology{
+      font-size: 17px;
+    }
+    .tech{
+      font-size: 40px;
+    }
+    .tech-info{
+      font-size: 19px;
     }
   }
 }
@@ -56,6 +65,14 @@ export default {
   .technology-info{
     .gen, .tech-info,.terminology{
      width: 450px;
+    }
+   
+    .tech{
+      width: 500px;
+      font-size: 54px;
+    }
+    .tech-info{
+      font-size: 19px;
     }
   }
 }

@@ -167,7 +167,7 @@ export default {
   .ex-container {
     width: 160px;
     height: 160px;
-    //position: relative;
+    position: relative;
     a{
       transition: all .5s ease;
     }
