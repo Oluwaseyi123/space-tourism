@@ -1,6 +1,12 @@
 <template>
   <the-header />
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition name="page-anim"
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut">
+      <component :is="Component"> </component>
+    </transition>
+  </router-view>
 </template>
 
 <script>
@@ -15,6 +21,7 @@ export default {
 
 
 <style lang="scss">
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
