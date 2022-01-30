@@ -69,7 +69,6 @@ export default {
 <style lang="scss">
 .active {
   background: var(--white-color);
-  //color: black;
   p{
     color: var(--dark-color);
   }
@@ -108,7 +107,6 @@ export default {
     align-items: center;
     cursor: pointer;
     color: var(--white-color);
-    //background: red;
     p {
       z-index: 100;
       margin: 0 auto;
@@ -147,7 +145,6 @@ export default {
   .right {
     width: 500px;
     display: flex;
-    // margin-right: 3em;
   }
   .pagination {
     flex-direction: column;
@@ -159,7 +156,6 @@ export default {
 @media screen and (min-width: 1300px) {
   .right {
     margin-right: 12em;
-    //overflow: hidden;
   }
   .image-container {
     img {

@@ -86,7 +86,6 @@ export default {
   background-color: var(--white-color);
 }
 .meet {
-  //overflow: hidden;
   height: 105vh;
   background-image: url("../assets/images/meet-crew-mobile.png");
 }
@@ -168,9 +167,6 @@ export default {
 @media screen and (min-width: 1120px) {
   .meet-container {
     margin-top: 5em;
-    // h5{
-    //   margin-top: 6em;
-    // }
   }
   .flex-container {
     flex-direction: row-reverse;
@@ -186,7 +182,7 @@ export default {
   .right-div {
     height: 40vh;
     max-height: 600px;
-    //margin-right: 5em;
+   
     p {
       text-align: left;
     }
@@ -197,11 +193,7 @@ export default {
 }
 
 @media screen and (min-width: 1330px) {
-  .meet-container{
-    h5{
-
-    }
-  }
+ 
   .right-div {
     margin-right: 7em;
   }

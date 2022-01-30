@@ -21,7 +21,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: "Home",
@@ -132,7 +131,7 @@ export default {
     padding: 0px 100px;
     display: flex;
     top: 18em;
-   // bottom: 4em;
+  
     align-items: end;
     justify-content: space-between;
   }
@@ -160,7 +159,7 @@ export default {
   .right-div{
     position: relative;
     display: flex;
-   // align-items: end;
+  
     bottom:6em;
     
   }
