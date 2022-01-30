@@ -46,6 +46,7 @@ export default {
 
 @media screen and (min-width: 1000px){
   .technology-info{
+    height: 40vh;
     .gen, .tech-info,.terminology{
       text-align: left;
        width: 390px;
@@ -63,6 +64,7 @@ export default {
 }
 @media screen and (min-width: 1300px){
   .technology-info{
+    
     .gen, .tech-info,.terminology{
      width: 450px;
     }

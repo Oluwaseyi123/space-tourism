@@ -83,7 +83,7 @@ export default {
 <style lang="scss" scoped>
 .active {
   opacity: 1;
-  background-color: red;
+  background-color: var(--white-color);
 }
 .meet {
   //overflow: hidden;
@@ -121,23 +121,12 @@ export default {
   width: 90px;
   margin: 1em auto 0;
   div {
-    &:nth-of-type(1) {
-      margin: 0 auto;
+     margin: 0 auto;
       border-radius: 50%;
       width: 10px;
       height: 10px;
-    background-color: var(--white-color);
+      border: 1px solid var(--white-color);
       cursor: pointer;
-    }
-    &:nth-of-type(2),&:nth-of-type(3), &:nth-of-type(4) {
-      margin: 0 auto;
-      border-radius: 50%;
-      width: 10px;
-      height: 10px;
-     background: var(--white-color);
-      cursor: pointer;
-       opacity: 0.17;
-    }
   }
 }
 @media screen and (min-width: 729px) {
@@ -174,10 +163,14 @@ export default {
     overflow-y: hidden;
     height: 100vh;
   }
+ 
 }
 @media screen and (min-width: 1120px) {
   .meet-container {
-    margin-top: 8em;
+    margin-top: 5em;
+    // h5{
+    //   margin-top: 6em;
+    // }
   }
   .flex-container {
     flex-direction: row-reverse;
@@ -191,6 +184,8 @@ export default {
     }
   }
   .right-div {
+    height: 40vh;
+    max-height: 600px;
     //margin-right: 5em;
     p {
       text-align: left;
@@ -202,6 +197,11 @@ export default {
 }
 
 @media screen and (min-width: 1330px) {
+  .meet-container{
+    h5{
+
+    }
+  }
   .right-div {
     margin-right: 7em;
   }

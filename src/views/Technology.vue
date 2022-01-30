@@ -8,15 +8,7 @@
         </div>
         <div class="right">
           <div class="pagination">
-            <div
-              class="page one"
-              @click="
-                (component = 'LaunchVehicle'),
-                  (isActive = 'btn1'),
-                  changeImage()
-              "
-              :class="{ page, one, active: isActive === 'btn1' }"
-            >
+            <div class="page one" @click="(component = 'LaunchVehicle'),(isActive = 'btn1'),changeImage()" :class="{ active: isActive === 'btn1' }">
               <p>1</p>
             </div>
             <div
@@ -54,11 +46,12 @@ export default {
   data() {
     return {
       component: "LaunchVehicle",
-      src: ''
+      isActive: 'btn1',
+      src: "",
     };
   },
-  mounted(){
-    this.changeImage()
+  mounted() {
+    this.changeImage();
   },
   methods: {
     changeImage() {
@@ -74,6 +67,13 @@ export default {
 </script>
 
 <style lang="scss">
+.active {
+  background: var(--white-color);
+  //color: black;
+  p{
+    color: var(--dark-color);
+  }
+}
 .technology {
   overflow-x: hidden;
   height: 125vh;
@@ -107,9 +107,12 @@ export default {
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: var(--white-color);
+    //background: red;
     p {
+      z-index: 100;
       margin: 0 auto;
-      color: var(--white-color);
+    
     }
   }
 }
